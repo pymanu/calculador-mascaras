@@ -1,7 +1,3 @@
-uno  = [1,1,1,1,1,1,1,1]
-two  = [1,1,1,1,1,1,1,1]
-tree = [1,1,1,1,1,1,1,1]
-four = [1,1,1,1,1,1,1,1]
 import math
 
 def eliff(n,element):
@@ -44,13 +40,15 @@ def proceso(n,uno,two,tree,four):
                 two[i]=0 
             return uno,two,tree,four
 
-
-
 while True:
     desicion = input("""QUE DESEA?
 1 - Saber la mascara de subred de un numero determinado de hosts
 2 - Saber la cantidad de hosts que puede albergar una Mascara determinada?
 :""")
+    uno  = [1,1,1,1,1,1,1,1]
+    two  = [1,1,1,1,1,1,1,1]
+    tree = [1,1,1,1,1,1,1,1]
+    four = [1,1,1,1,1,1,1,1]
     if desicion == "1":
         host = int(input("Diga cuantos host quiere y le dire su mascara mas optima: "))
         resultado = host+2
@@ -89,3 +87,9 @@ while True:
         num = cadena_str_binario.count("0")
         hosts_final = (2**num)-2
         print(f"Tu Mascara de red es capaz de albergar hasta {hosts_final} hosts")
+
+
+
+
+
+
